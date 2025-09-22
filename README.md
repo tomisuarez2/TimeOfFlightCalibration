@@ -9,7 +9,7 @@ The goal is to model and understand the sensor’s noise processes (white noise,
 
 ## ⚙️ How It Works
 
-The repository implements a workflow to record, process, and analyze barometric altitude data:
+The repository implements a workflow to record, process, and analyze TOF distance data:
 
 1. **Raw Data Acquisition**
 
@@ -310,7 +310,7 @@ TimeOfFlightCalibration/
 │   ├── connection.png               # Wiring diagram (Arduino UNO ↔ VL53L0X/1XV2)
 │   ├── VL53L0X/                     # Arduino library (C++ .h/.cpp)
 │   ├── VL53L0X_Continuous.ino       # Arduino sketch for UART streaming
-│   └── arduino code/VL53L0X.pdf     # Sensor datasheet
+│   └── VL53L0X.pdf                  # Sensor datasheet
 ├── TimeOfFlightCalibration/         # Core Python modules
 │   ├── tof_distance_calibration.py  # Main calibration logic
 │   └── utils.py                     # Helpers and data loaders
@@ -411,7 +411,7 @@ This Arduino library for sensor comunnication is based on the excellent open-sou
 Contributions are welcome!
 Fork, improve, and open a pull request 🚀
 
-(Also check out our other related projects: [ImuCalibration](https://github.com/tomisuarez2/ImuCalibration), [MagnetometerCalibration](https://github.com/tomisuarez2/MagnetometerCalibration)) and [BarometricAltimeterCalibration](https://github.com/tomisuarez2/BarometricAltimeterCalibration)
+(Also check out our other related projects: [ImuCalibration](https://github.com/tomisuarez2/ImuCalibration), [MagnetometerCalibration](https://github.com/tomisuarez2/MagnetometerCalibration) and [BarometricAltimeterCalibration](https://github.com/tomisuarez2/BarometricAltimeterCalibration))
 
 
 ---
