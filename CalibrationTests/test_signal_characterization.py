@@ -8,7 +8,7 @@ import numpy as np
 from TimeOfFlightCalibrationModules import tof_distance_calibration as tof
 from TimeOfFlightCalibrationModules.utils import extract_tof_distance_data, show_time_data
 
-spanish = False
+spanish = True
 
 # Use synthetic data
 synthetic = False
@@ -68,7 +68,8 @@ else:
     plot_xlabel = "Time [s]"
     plot_ylabel = "[mm]"
     plot_legend = ["Logged Signal", "Simulated Signal"]
-show_time_data(np.vstack([tof_data, sim_data]).T, sampling_freq, legend=plot_legend, 
+
+show_time_data(np.vstack([tof_data, sim_data]).T[:4000,:], sampling_freq, legend=plot_legend, 
                title=plot_title_1, xlabel=plot_xlabel, ylabel=plot_ylabel)
 
 
