@@ -8,7 +8,7 @@ import numpy as np
 from TimeOfFlightCalibrationModules import tof_distance_calibration as tof
 from TimeOfFlightCalibrationModules.utils import extract_tof_distance_data, show_time_data
 
-spanish = True
+spanish = False
 
 # Use synthetic data
 synthetic = False
